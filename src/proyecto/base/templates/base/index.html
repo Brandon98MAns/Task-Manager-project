@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+  <title>Check-List</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200;1,500;1,800&family=Mulish:wght@500&family=Poppins:wght@200&family=Quicksand:wght@300;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200;1,500;1,800&family=Mulish:wght@500&family=Poppins:wght@200&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body{
+        background-color: #F0F4F0;
+        font-family: 'Mulish', sans-serif;
+        padding-top: 60px;
+    }
+
+    .container{
+        padding: 30px;
+        max-width: 550px;
+        margin: auto;
+        background-color: #EDEEE3;
+        -webkit-box-shadow: 20px 2px 13px 4px rgba(0, 0, 0, 0.21);
+        box-shadow: 10px 10px 10px -2px rgba(0, 0, 0, 0.21);
+    }
+
+    h1,h2,h3,h4,h5,h6{
+        font-family: 'Poppins', sans-serif;
+        
+    }
+
+    a,p,ul{
+        color: #052D78;
+    }
+
+    .barra-superior{
+        display: flex;
+        justify-content: space-between;
+        color: #ffffff;
+        padding: 10px;
+        border-radius: 15px 0 15px 0;
+        background: linear-gradient(90deg, #6A82E1 0%, #3B65B2 43%, #041E4F 100%);
+    }
+
+    .barra-superior a{
+        color: white;
+        text-decoration: none;
+    }
+
+    .envoltorio-tarea{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        background: white;
+        border-top: 1px solid rgb(255, 255, 255,);
+    }
+    
+    .titulo-tarea{
+        display: flex;
+    }
+
+    .titulo-tarea a{
+        text-decoration: none;
+        color: #052D78;
+        margin-left: 10px;
+    }
+
+    .icono-tarea-completa{
+        height: 20px;
+        width: 20px;
+        background-color: rgb(105, 162, 105);
+        border-radius: 50px;
+    }
+
+    .icono-tarea-incompleta{
+        height: 20px;
+        width: 20px;
+        background-color: rgb(218, 218, 218);
+        border-radius: 50px;
+    }
+
+    .enlace-eliminar{
+        text-decoration: none;
+        font-weight: 900;
+        color: #EA4220;
+        font-size: 22px;
+        line-height: 0;
+    }
+
+    #envoltorio-agregar-buscar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    #enlace-agregar{
+        color: #057A0E;
+        text-decoration: none;
+        font-size: 22px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    textarea{
+        margin-top: 3px;
+        border: 3px solid #000000;
+        border-radius: 20px;
+        padding: 10px;
+        width: 90%;
+    }
+
+    label{
+        padding-top: 10px !important;
+        display: block;
+    }
+
+    .button{
+        margin-left: 3px;
+        border: 1px solid #000000;
+        background-color: #000000;
+        color: white;
+        padding: 10px;
+        font-size: 14px;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        font-style: bold;
+    }
+
+    .cuerpo-tarjeta{
+        padding: 20px;
+    }
+
+
+  </style>
+</head>
+
+
+<body>
+    <div class="container">
+        {% block content%}
+        {% endblock content%}
+    </div>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

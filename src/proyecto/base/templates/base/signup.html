@@ -1,0 +1,26 @@
+{% extends 'base/index.html' %}
+{% block content%}
+
+<div class="barra-superior" >
+    <h1>Sign Up</h1>
+</div>
+
+<div class="cuerpo-tarjeta">
+    <form method="POST" action>
+        {% csrf_token %}
+        <!--ver elementos en formato parrafo. Uno por encima del otro-->
+        <label>{{form.username.label}}</label>
+            {{form.username}}
+        
+        <label>{{form.password1.label}}</label>
+            {{form.password1}}
+
+        <label>{{form.password2.label}}</label>
+            {{form.password2}}
+        <input style="margin-top: 10px;"class="button" type='submit' value='SignUp'>
+    </form>
+    <p>Ya tienes una cuenta?  <a href="{%  url 'login' %}">Login</a></p>
+</div>
+
+
+{% endblock content%}
